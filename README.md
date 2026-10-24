@@ -2,6 +2,7 @@
 
 Ten CrewAI projects served by one FastAPI application, with a website that explains and runs each of them.
 
+- **Live deployment:** https://crewai-p47w.onrender.com (website at `/`, routes at `/agent1` to `/agent10`, API documentation at `/docs`). It runs on Render's free plan, which stops the service after 15 minutes without requests, so the first request after a pause can take about a minute.
 - **Backend:** FastAPI (`app.py`), CrewAI 1.x, Google Gemini through an API key.
 - **Routes:** `/agent1` to `/agent10`, one route for each project. Each route takes a valid input and returns a valid output.
 - **Website:** the same server returns a single-page website at `/`. It shows, for every project, its score on the *complexity versus precision* graph, how every point was given, the code cut into the **seven steps** of the CrewAI notes, and a panel that runs the agent.
