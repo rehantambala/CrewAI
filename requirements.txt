@@ -1,0 +1,7 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+crewai[google-genai]>=1.15,<2
+crewai-tools>=1.15,<2
+ddgs>=9
+pandas>=2.2
+pydantic>=2.7
